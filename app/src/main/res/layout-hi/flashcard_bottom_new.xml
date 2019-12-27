@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="@dimen/size_40"
+    android:background="@drawable/flashbottom_rounded">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/bookmark"
+                    android:gravity="left|center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <LinearLayout
+               android:layout_marginStart="@dimen/size_15"
+               android:layout_marginLeft="@dimen/size_15"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/bookmark_img"
+                android:layout_width="@dimen/size_17"
+                android:layout_height="@dimen/size_17"
+                android:src="@drawable/bookmark" />
+
+                <TextView
+                    android:id="@+id/bookmark_txt_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_4"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="start"
+                    android:text="@string/bookmark"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/txt_12" />
+            </LinearLayout>
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/Whatsapp_share"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginRight="@dimen/size_7"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/Whatsapp"
+                    android:layout_width="@dimen/size_17"
+                    android:layout_height="@dimen/size_17"
+                    android:src="@drawable/whatsapp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_4"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="start"
+                    android:text="@string/whatsapp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/txt_12" />
+            </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:id="@+id/shareLay"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <LinearLayout
+                   android:layout_marginRight="@dimen/size_20"
+                 android:layout_marginEnd="@dimen/size_20"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="@dimen/size_17"
+                    android:layout_height="@dimen/size_17"
+                    android:src="@drawable/share_latest" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_4"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="start"
+                    android:text="@string/share"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/txt_12" />
+            </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginRight="@dimen/size_5"
+                android:id="@+id/related_stories1"
+                android:layout_width="@dimen/size_20"
+                android:layout_height="@dimen/size_20"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                 android:visibility="gone"
+                android:src="@drawable/related_stories" />
+        </RelativeLayout>
+
+
+</LinearLayout>
